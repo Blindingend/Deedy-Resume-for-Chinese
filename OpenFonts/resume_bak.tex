@@ -1,0 +1,259 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+    
+\pagestyle{fancy}
+\fancyhf{}
+    
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Gao}{Ce}{ \urlstyle{same}\href{mailto:whoami@whoareyou.com}{whoami@whoareyou.com} | 1111 1111 111
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Shanghai Jiao Tong University}
+\descript{MEng in Software Engineering}
+\location{2016.09-2019.03}
+\sectionsep
+
+\subsection{Shanghai Jiao Tong University}
+\descript{BE in Software Engineering}
+\descript{LLB in Law}
+\location{2012.09-2016.09}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+\sectionsep
+Blog://  \href{http://gaocegege.com/Blog}{\bf gaocegege.com/Blog} \\
+(30000 visitors and 80000 pageviews totally) \\    
+Github:// \href{https://github.com/gaocegege}{\bf gaocegege} \\
+(380+ followers) \\
+LinkedIn://  \href{https://www.linkedin.com/in/gaocegege}{\bf gaocegege} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\sectionsep
+\subsection{Programming}
+\location{Over 5000 lines}
+Go \textbullet{} Python \textbullet{} C++ \textbullet{} Java \\
+\location{1000 - 5000 lines}
+R \textbullet{} C \textbullet{} Scala \textbullet{} \LaTeX\ \\
+\location{Less than 1000 lines}
+HTML \textbullet{} Javascript \textbullet{} MatLab \textbullet{} Shell \textbullet{} Processing \\ 
+\sectionsep
+
+\subsection{Cloud Computing}
+\location{Familiar}
+Docker \textbullet{} Kubernetes \\
+\location{Knowledge}
+Swarm \textbullet{} Moby \textbullet{} Linuxkit \textbullet{} HyperContainers \textbullet{} ClearContainers \textbullet{} Xen \textbullet{} KVM \textbullet{} Unikernel \\
+\sectionsep
+
+\subsection{DevOps}
+\location{Familiar}
+Micro Services \textbullet{} Jenkins \textbullet{} Travis CI
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.73\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\sectionsep
+\runsubsection{Google Summer of Code}
+\descript{Student Participant}
+\location{2017.05 - 2017.09 | Remote}
+\vspace{\topsep}
+\begin{tightemize}
+    \item 1318 out of 20651 applicants\textbf{(6\%)} chosen to be a participant
+    \item Implemented R language mode for Processing
+    \item Cooperated with the community to support Processing libraries and R packages
+    \item \href{https://github.com/gaocegege/Processing.R}{\bf Processing.R} has \textbf{70 stars} in GitHub, which becomes one of the most popular GSoC projects
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Morgan Stanley}
+\descript{CIP Project Intern}
+\location{2017.02-2017.08 | Shanghai}
+\begin{tightemize}
+\item Optimized the scheduler in treadmill, which is the open source container management system
+\item Implemented scheduling logics similar to Kubernetes
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TouchPal}
+\descript{Data Engineer(Intern) }
+\location{2015.09-2015.09 | Shanghai}
+\begin{tightemize}
+\item Migrated the web crawler code to the new architecture
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Alipay}
+\descript{Java R\&D Engineer(Intern)}
+\location{2015.07-2015.09 | Hangzhou}
+\begin{tightemize}
+\item Worked in the international group
+\item Implemented some business logic and some logic about operation platform
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects and Papers}
+\sectionsep
+\runsubsection{\href{https://github.com/caicloud/cyclone}{\bf Cyclone}}
+\descript{Maintainer}
+\location{2016.11}
+\begin{tightemize}
+    \item Cloud native continuous integration platform built for container workflow
+    \item Joint Research with caicloud, got \textbf{440 stars} in GitHub
+    \item Implemented YAML parser and Docker runtime
+    \end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/gaocegege/scrala}{\bf Scrala}}
+\descript{Owner}
+\location{2015.12}
+\begin{tightemize}
+    \item Spider framework inspired by scrapy
+    \item Has \textbf{70 stars} in GitHub
+    \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OPEN SOURCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Open Source Contributions}
+\begin{tabular}{ll}
+\href{https://github.com/moby/moby/commits?author=gaocegege}{\bf moby/moby} & Implemented docker service ps -q option \\
+\href{https://github.com/opencontainers/runc/commits?author=gaocegege}{\bf opencontainers/runc} & Fixed an upstream bug for \href{https://github.com/moby/moby/issues/27484}{moby/moby\#27484} \\
+\href{https://github.com/pingcap/tidb/commits?author=gaocegege}{\bf pingcap/tidb} & Imported code coverage test; Implemented truncate function \\
+\href{https://github.com/coala/coala-vs-code/commits/master?author=gaocegege}{\bf coala/coala-vs-code} & Visual Studio Code plugin maintainer \\
+\href{https://github.com/weijianwen/SJTUThesis/commits?author=gaocegege}{\bf weijianwen/SJTUThesis} & Add English abstract for the template; \\
+ &  Replace copyrighted fonts \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2017         & Scholarship  & Intel \\
+2016	     & 2nd Prize  & 13th National Post-Graduate Mathematic Contest in Modeling \\
+2016	     & 1st Prize  & 7th China Students Service \\
+ & & Outsourcing Innovation \& Entrepreneurship Competition \\
+2015	     & 2nd Prize  & Interdisciplinary Contest In Modeling \\
+2015         & 1st Prize & National Mathematical Contest in Modeling \\
+2014	     & 2nd Prize  & DaZhongDianPing Geek Challenge \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
