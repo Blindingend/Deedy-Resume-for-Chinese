@@ -14,4 +14,7 @@ cd ${ENGLISH_DIR}
 xelatex ./resume.tex
 mv resume.pdf ../${OUTPUT_DIR}/resume.pdf
 cd - > /dev/null
+cd ${ROOT}
+xelatex ./combination.tex
+mv combination.pdf docs/resume-cb.pdf
 cd - > /dev/null
