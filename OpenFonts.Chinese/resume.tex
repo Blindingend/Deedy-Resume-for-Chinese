@@ -47,7 +47,8 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
-    
+
+\renewcommand{\baselinestretch}{1.2}
 \pagestyle{fancy}
 \fancyhf{}
     
@@ -74,7 +75,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.25\textwidth} 
+\begin{minipage}[t]{0.3\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -110,7 +111,6 @@ Github:// \href{https://github.com/veiasai}{\bf veiasai} \\
 Operating System \\
 Distributed System \\
 \textbf{CSAPP} \\
-Computer Sys Engineering \\
 Compilers + Practicum \\
 Web Developing \\
 Principles of DB System  \\
@@ -122,30 +122,30 @@ Principles of DB System  \\
 
 \section{技能}
 \sectionsep
-\subsection{编程}
+\subsection{\textbf{编程}}
 \location{超过 5000 行}
 C/C++ \\
 \location{1000 - 5000 行}
-Java \textbullet{} Javascript \textbullet{} Python \textbullet{} LaTeX\ \\
+Java \textbullet{} Javascript \textbullet{} Python \ \\
 \location{低于 1000 行}
-Go \textbullet{} HTML \textbullet{} Haskell \textbullet{} MatLab \textbullet{} Shell \textbullet{} Sql \\ 
+Go \textbullet{} Haskell \textbullet{} Shell  \\ 
 \sectionsep
 
-\subsection{云计算}
+\subsection{\textbf{云计算}}
 \location{一般}
 Docker \textbullet{} Kubernetes \\
 \location{了解}
 Kafka \textbullet{} Elasticsearch \\
 \sectionsep
 
-\subsection{DevOps}
+\subsection{\textbf{DevOps}}
 \location{一般}
-微服务 \textbullet{} SpringCloud \textbullet Drone \\
+SpringCloud \textbullet Drone \\
 \location{了解}
-Service Mesh \textbullet{} Istio  \\
+Istio \textbullet Ansible \\
 \sectionsep
 
-\subsection{语言}
+\subsection{\textbf{语言}}
 CET 6   \\
 \sectionsep
 
@@ -157,7 +157,7 @@ CET 6   \\
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.73\textwidth} 
+\begin{minipage}[t]{0.68\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -176,8 +176,8 @@ CET 6   \\
 \runsubsection{\bf 秋水书社}
 \descript{Minister of Organization Department}
 \location{2017.10}
+\vspace{\topsep}
 \begin{tightemize}
-    \item
     \item 制作纸质杂志期刊
 \end{tightemize}
 
@@ -214,6 +214,16 @@ CET 6   \\
 \begin{tightemize}
     \item 大学生创新创业训练计划项目
     \item 基于 Caffe 的深度学习智能穿搭推荐应用
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{\bf Tagoo}
+\descript{Maintainer}
+\location{2018.8}
+\begin{tightemize}
+    \item 企业合作项目，产品原型开发
+    \item SpringCloud + Docker，微服务化后端
 \end{tightemize}
 
 \sectionsep
